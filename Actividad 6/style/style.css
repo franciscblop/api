@@ -1,0 +1,215 @@
+header, nav, section, article, footer, h1, h2, p{
+  margin: 10px 0;
+  padding: 0.5em;
+  color: #fff;
+}
+
+body{
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #222f3e;
+  color: #c8d6e5;
+}
+
+header {
+  background-color: #0abde3;
+  text-align: center;
+}
+
+/*a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c8d6e5;
+  font-weight: bold;
+}*/
+
+section {
+  text-align: center;
+  margin: auto;
+  background-color: #66ad6b;
+  margin: 10px 0;
+}
+
+article {
+  background-color: #ff9f43;
+    display: inline-block;
+    padding: 0;
+    margin: 0 2px;
+    width: 44px;
+    height: 45px;
+}
+
+footer {
+  background-color: #ff9f43;
+  clear: both;
+}
+
+header, nav, section, article, footer {
+  border-radius: 3px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Responsive Design */
+
+#contenedor {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/*Estilos Generales*/
+.button {
+	background:#7f8c8d;
+	color:#fff;
+	display:inline-block;
+	font-size:1.25em;
+	margin:20px;
+	padding:10px 0;
+	text-align:center;
+	width:200px;
+	text-decoration:none;
+	box-shadow:0px 3px 0px #373c3c;
+}
+ 
+.button span {
+	margin-right:10px;
+}
+ 
+/*Colores*/
+.button.blue {
+	background:#3498db;
+	box-shadow:0px 3px 0px #266792;
+}
+ 
+.button.yellow {
+	background:#e67e22;
+	box-shadow:0px 3px 0px #b55704;
+}
+ 
+ 
+/*Tamaños*/
+.button.medium {
+	width:350px;
+}
+ 
+ 
+.button.large {
+	width:450px;
+}
+ 
+ 
+.button.radius {
+	border-radius:50px;
+}
+ 
+/*Efectos, Hover*/
+.button:hover {
+	box-shadow:0px 0px 0px;
+	padding-top:7px;
+}
+
+.enjoy-css {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 11px 20px;
+  border: none;
+  -webkit-border-radius: 32px / 54px;
+  border-radius: 32px / 54px;
+  font: normal 18px/normal "Coda", Helvetica, sans-serif;
+  color: rgba(0,142,198,1);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: rgba(252,252,252,1);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.enjoy-css:hover {
+  background: rgba(232,249,255,1);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(90,90,90,0.2) inset;
+  box-shadow: 0 2px 2px 0 rgba(90,90,90,0.2) inset;
+}
+
+.enjoy-css:focus {
+  background: rgba(255,253,232,1);
+}
+
+/* Customize the label (the container) */
+.container {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 15px;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

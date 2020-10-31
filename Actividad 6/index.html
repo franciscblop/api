@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Proyecto 6</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css" />
+    </head>
+    <body>
+        <div id="contenedor">
+          <header class="noPrint">
+              <h1>PROYECTO 6</h1>
+              <h2>Consumo de API REST</h2>
+          </header>
+
+          <section>
+            <h2>Lista de Tareas</h2>
+            <a  class="button blue medium radius" id="btnTareas"> Consultar (get) </a>
+            <p id="respuesta_tareas"></p>
+          </section>
+          <section>
+            <h2>Información sobre 1 Tarea</h2>
+            <input id="txtidTareaget" class="enjoy-css" placeholder="Id Tarea" />
+            <a  class="button blue medium radius" id="btnTarea"> Consultar (get) </a>
+            <p id="respuesta_tarea"></p>
+          </section>
+          <section>
+            <h2>Nuevo Tarea</h2>
+            <input id="txtnombrepost" class="enjoy-css" placeholder="Nombre de la Tarea" />
+            <label class="container">¿Terminada?
+              <input type="checkbox" id="cbterminadapost">
+              <span class="checkmark"></span>
+            </label>
+            <a  class="button blue medium radius" id="btnnuevo"> Crear (post) </a>
+            <p id="respuesta_post"></p>
+          </section>
+          <section>
+            <h2>Actualizar Tarea</h2>
+            <input id="txtidTareaput" class="enjoy-css" placeholder="Id Tarea" />            
+            <input id="txtnombreput" class="enjoy-css" placeholder="Nombre de la Tarea" />
+            <label class="container">¿Terminada?
+              <input type="checkbox" id="cbterminadaput">
+              <span class="checkmark"></span>
+            </label>
+            <a  class="button blue medium radius" id="btnactualizar"> Actualizar (put) </a>
+            <p id="respuesta_put"></p>
+          </section>
+          <section>
+            <h2>Eliminar Tarea</h2>
+            <input id="txtidTarearemove" class="enjoy-css" placeholder="Id Tarea" />
+            <a  class="button blue medium radius" id="btneliminar"> Eliminar (delete) </a>
+            <p id="respuesta_remove"></p>
+          </section>
+          <footer class="noPrint">
+              <p>
+                  Copyright &copy; 2020 ADW2020<br />
+              </p>
+          </footer>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</HTML>
